@@ -99,7 +99,7 @@
 .about .grid {
     /* overflow: hidden; */
     /* height: 600px; */
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(2,  1fr);
     /* background-color: #a299af; */
     gap: 50px;
 }
