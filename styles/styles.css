@@ -822,6 +822,9 @@ h2 {
     z-index: 11;
     visibility: collapse;
 }
+.menu_items a {
+    font-size: .8rem  ;
+}
 .menu-container {
     background-color: #fff;
     /* height: 10vh; */
@@ -849,7 +852,7 @@ h2 {
 }
 .menu_items{
     position: fixed;
-    bottom: 10vh;
+    bottom: 80px;
     left: 0;
     width: 100%;
     display:grid;
@@ -879,7 +882,10 @@ h2 {
 .menu_items li {
     border-bottom: 1px dotted #333;
     padding: 20px;
-
+}
+.dark .menu_items li {
+    border-bottom: 1px dotted #fff;
+  
 }
 .menu_items.open {
     transform:  translateY(0);
