@@ -11,6 +11,7 @@
     visibility: visible;
     width: 100vw;
   }
+  
   .dark .footerlink li{
     border-bottom:1px solid #fff;
 }
