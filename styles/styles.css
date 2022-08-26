@@ -129,7 +129,7 @@ a {
     display: block;
     /* width: 100%; */
     flex:70%;
-    padding: 30px;
+    padding: 40px;
     position: relative;
     overflow: hidden;
 }
@@ -351,6 +351,68 @@ textarea {
     /* background: aqua; */
 }
 
+.resume-container {
+    overflow: hidden;
+
+}
+
+.resume-content {
+    padding-top: 30px;
+    position: relative;
+    padding-left: 50px;
+    /* background: aquamarine; */
+}
+.resume-title {
+    /* background: green; */
+}
+
+.resume-content::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    top: -100px;
+    left: 15px;
+    background: teal;
+}
+
+.resume-content::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top:35px;
+    left: 11px;
+    background: teal;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--jet);
+    
+}
+
+.resume-date {
+    color: teal;
+    font-size: 15px;
+    display: block;
+    margin: 5px 0;
+}
+
+.resume a {
+    color: teal;
+    transition: all .3 ease-in-out;
+}
+
+.resume a:hover {
+    transition: all .3 ease-in-out;
+    opacity: .5;
+}
+
+.experience {
+    margin-top: 100px;
+}
+
+.experience .resume-content::after {
+    top: -70px;
+}
 
 
 /* portfolio */

@@ -12,6 +12,8 @@ const resumeSection = document.querySelector('.resume-section')
 const contactBtn = document.querySelector('.contact-btn')
 const contactSection = document.querySelector('.contact-section')
 
+confirm('This Website is still in development')
+
 switchModes.addEventListener('click', () => {
   switchModes.classList.toggle('active')
   main.classList.toggle('active')
