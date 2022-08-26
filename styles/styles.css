@@ -333,3 +333,80 @@ textarea {
 .form-wrapper input:focus, textarea:focus {
     border: 3px solid teal;
 }
+
+
+.resume-title-icon {
+    /* background: red; */
+    display: flex;
+    font-size: 30px;
+}
+
+.resume-title-text  {
+    /* background: aqua; */
+}
+
+
+
+/* portfolio */
+
+.port_wrapper {
+    background: hsla(240, 1%, 17%, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+.port_title {
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5px 5px 25px 25px;
+    background: teal;
+
+}
+
+.port_title p {
+    font-size: 14px;
+
+}
+figure {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 250px;
+}
+
+figure img {
+    transition: all .3s ease-in-out;
+    /* transform: scale(.95); */
+    border-radius: 20px;
+    height: 100%;
+}
+.port_img{
+    overflow: hidden;
+    height: 100%;
+}
+.port_img:hover img {
+    transform: scale(1.15);
+
+
+}
+.port-active {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+    display: none;
+    border-radius: 10px;
+}
+
+figure:hover .port-active {
+    display: block;
+}
+
+.port-active a {
+    color: teal;
+}
