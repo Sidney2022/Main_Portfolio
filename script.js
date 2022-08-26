@@ -3,6 +3,14 @@ const main = document.querySelector('main')
 const sideBar = document.querySelector('.sidebar')
 const mainContent = document.querySelector('.main_section')
 const navBar = document.querySelector('.navbar')
+const aboutBtn = document.querySelector('.about-btn')
+const resumeBtn = document.querySelector('.resume-btn')
+const portfolioBtn = document.querySelector('.portfolio-btn')
+const portfolioSection = document.querySelector('.portfolio-section')
+const aboutSection = document.querySelector('.about-section')
+const resumeSection = document.querySelector('.resume-section')
+const contactBtn = document.querySelector('.contact-btn')
+const contactSection = document.querySelector('.contact-section')
 
 switchModes.addEventListener('click', () => {
   switchModes.classList.toggle('active')
@@ -11,3 +19,52 @@ switchModes.addEventListener('click', () => {
   mainContent.classList.toggle('active')
   navBar.classList.toggle('active')
 })
+
+
+portfolioBtn.addEventListener('click', () => {
+  portfolioSection.classList.add('active')
+  portfolioBtn.classList.add('active')
+  aboutBtn.classList.remove('active')
+  aboutSection.classList.remove('active')
+  resumeSection.classList.remove('active')
+  resumeBtn.classList.remove('active')
+  contactSection.classList.remove('active')
+  contactBtn.classList.remove('active')
+})
+
+resumeBtn.addEventListener('click', () => {
+  portfolioSection.classList.remove('active')
+  resumeBtn.classList.add('active')
+  portfolioBtn.classList.remove('active')
+  aboutBtn.classList.remove('active')
+  contactBtn.classList.remove('active')
+  aboutSection.classList.remove('active')
+  resumeSection.classList.add('active')
+  contactSection.classList.remove('active')
+  // portfolioSection.classList.add('active')
+})
+
+aboutBtn.addEventListener('click', () => {
+  aboutSection.classList.add('active')
+  portfolioSection.classList.remove('active')
+  portfolioBtn.classList.remove('active')
+  resumeBtn.classList.remove('active')
+  contactBtn.classList.remove('active')
+  aboutBtn.classList.add('active')
+  resumeSection.classList.remove('active')
+  contactSection.classList.remove('active')
+  // portfolioSection.classList.add('active')
+})
+
+contactBtn.addEventListener('click', () => {
+  aboutSection.classList.remove('active')
+  aboutBtn.classList.remove('active')
+  resumeSection.classList.remove('active')
+  resumeBtn.classList.remove('active')
+  portfolioSection.classList.remove('active')
+  portfolioBtn.classList.remove('active')
+  contactSection.classList.add('active')
+  contactBtn.classList.add('active')
+  // portfolioSection.classList.add('active')
+})
+

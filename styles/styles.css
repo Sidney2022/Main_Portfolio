@@ -116,8 +116,12 @@ a {
     
 
 }
+.navbar button:hover {
+    background: rgba(0,0,0,0.4);
+}
 .contact_text a:hover, .navbar button:hover {
     color: teal;
+
 
 }
 
@@ -132,7 +136,7 @@ a {
 
 .navbar {
     background: hsla(240, 1%, 17%, 0.75);
-    padding: 10px 40px;
+    padding: 0 40px;
     border-bottom-left-radius: 30px;
     position: absolute;
     top: 0;
@@ -148,17 +152,19 @@ a {
 }
 
 .navbar button {
-    padding: 10px ;
     background: transparent;
     color: #fff;
     border: 0;
     font-size: 16px;
     text-transform: capitalize;
     cursor: pointer;
+    padding: 20px 10px;
 }
-.navbar a {
+/* .navbar a {
+    padding: 20px ;
     color: #fff;
-}
+    display: inline-block;
+} */
 
 .switch {
     position: relative;
@@ -410,3 +416,40 @@ figure:hover .port-active {
 .port-active a {
     color: teal;
 }
+
+.main_section.active .port_wrapper {
+    background: #ddd;
+    color: #333;
+}
+.main_section.active .port_title {
+    background: #aaa ;
+}
+
+.about-section {
+    display: none;
+}
+.about-section.active {
+    display: block;
+}
+
+.resume-section {
+    display: none;
+}
+
+.contact-section {
+    display: none;
+}
+
+.portfolio-section {
+    display: none;
+}
+
+.portfolio-section.active, .resume-section.active, .contact-section.active {
+    display: block;
+}
+
+.portfolio-btn.active, .resume-btn.active, .about-btn.active, .contact-btn.active {
+    color: teal;
+}
+
+

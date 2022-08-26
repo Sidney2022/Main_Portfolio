@@ -83,21 +83,20 @@
 
         <section class="main_section">
             <div class="navbar cap">
-                <ul class="flex ">
-                    <li> <button><a class="current" href="">about</a></button></li>
-                    <li> <button><a href="./resume.html">resume</a></button></li>
-                    <li> <button><a href="/portfolio.html">portfolio</a></button></li>
-                    <li> <button><a href="/contact.html">contact</a></button></li>
-                    <li class="">
+                <div class="flex ">
+                     <button class="about-btn" >about</button>
+                     <button class="resume-btn">resume</button>
+                     <button class="portfolio-btn">portfolio</button>
+                     <button class="contact-btn">contact</button>
                         <button class="switch">
                             <ion-icon name="moon" class="dark-mode "></ion-icon>
                             <ion-icon name="sunny" class="light-mode "></ion-icon>
-                        </button>
-                    </li>
-                </ul>
+                    </button>
+                </div>
             </div>
 
             <div class="about main_sect_cont">
+               <div class="about-section active">
                 <h1 class="cap title_page"> about me </h1>
                 <p>I'm Sidney, a web developer from Delta State, Nigeria,  I am a full stack web developer
                     <br>
@@ -106,42 +105,151 @@
                     As a freelancer, I've been able to provide small businesses and individuals with digital solutions by helping them build modern and responsive websites for their business and/or personal branding.
                     I'm highly proficcient in the use of html, css , javascript and django. and I'm also interested in learning flutter for android development
                     </p>
+
+                    <div class="services ">
+                        <h2>What I Do</h2>
+                       <div class="grid">
+                        <div class="card flex">
+                            <div class="card-icon">
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                            </div>
+                            <div class="card-text">
+                                <h2>Frontend Web Development</h2>
+                            <p>
+                                I implement your website designs to be both useful and responsive, giving your users the best experience</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <div class="card-icon">
+                                <ion-icon name="server-outline"></ion-icon>
+                            </div>
+                            <div class="card-text">
+                                <h2>backend Web Development</h2>
+                            <p>
+                                I integrate the backend logic for your web applications/platforms using Django</p>
+                            </div>
+                        </div>
+                        <div class="card flex">
+                            <div class="card-icon">
+                                <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
+                            </div>
+                            <div class="card-text">
+                                <h2>fullstack Web Development</h2>
+                            <p> As a fullstack developer, I also develop both frontend and backend of your websites </p>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- porfolio -->
+                <div class="portfolio-section">
+                    <h1 class="cap"> my portfolio  </h1>
+               
+                <h2 class="cap ">all</h2>
+                <span>click on each image to see live project</span>
+                <div class="portfolio grid ">
+
+
+                     <!-- portfolio item -->
+                    <div class="port_wrapper ">
+                        <div class="port_title">
+                            <h3 class="cap">go chunk</h3>
+                            <p>go chunk is a web application built using django for the splitting of csv and json files . A <a href="#"> zuri </a> project</p>
+                        </div>
+                        <figure>
+                            <div class="port_img">
+                                <img src="./image/go-chunk.png" alt="">
+                                <div class="port-active">
+                                    <a target="_blank" href="https://go-chunk.herokuapp.com"><ion-icon name="eye-outline"  title="see live site"></ion-icon>  </a>                      
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="port_wrapper ">
+                        <div class="port_title">
+                            <h3 class="cap">portfolio website</h3>
+                            <p>This portfolio website</p>
+                        </div>
+                        <figure>
+                            <div class="port_img"> 
+                                <img src="./image/port_site.png" alt="">
+                                <div class="port-active">
+                                    <a  href="/"><ion-icon name="eye-outline"  title="see live site"></ion-icon>  </a>                      
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="port_wrapper ">
+                        <div class="port_title">
+                            <h3 class="cap">random project</h3>
+                            <p>no project here yet</p>
+                        </div>
+                        <figure>
+                            <div class="port_img">
+                                <img src="./image/project-1.jpg" alt="">
+                                <div class="port-active">
+                                    <a target="_blank" href="https://go-chunk.herokuapp.com"><ion-icon name="eye-outline"  title="see live site"></ion-icon>  </a>                      
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+
+                </div>
+                </div>
+
+
+
+                <!-- resume -->
+                <div class="resume-section">
+                    <h1 class="cap"> my resume  </h1>
+                    <div class="resume">
+                        <div class="resume-title flex">
+                            <div class="resume-title-icon">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </div>
+                            <div class="resume-title-text cap">
+                                <h2>education</h2>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <br>
+                    <br>
+                    <h1>still in development</h1>
+                </div>
+
+                <!-- contact-section -->
+                <div class="contact-section">
+                    <h1 class="cap"> contact me </h1>
+                 <div class="form-wrapper">
+                     <form action=""> 
+                        
+                             <div class="inputs">
+                                 <input type="text" name="" id="" placeholder="Name" required>
+                             <input type="email" name="" id="" placeholder="youremail@example.com" required>
+                             </div>
+                         
+                        
+                             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+         
+                             <button type="submit" disabled>Send message</button>
+                        
+                     </form>
+                   </div>
+                </div>
+                
             </div>
 
-            <div class="services ">
-                <h2>What I Do</h2>
-               <div class="grid">
-                <div class="card flex">
-                    <div class="card-icon">
-                        <ion-icon name="code-slash-outline"></ion-icon>
-                    </div>
-                    <div class="card-text">
-                        <h2>Frontend Web Development</h2>
-                    <p>
-                        I implement your website designs to be both useful and responsive, giving your users the best experience</p>
-                    </div>
-                </div>
-                <div class="card flex">
-                    <div class="card-icon">
-                        <ion-icon name="server-outline"></ion-icon>
-                    </div>
-                    <div class="card-text">
-                        <h2>backend Web Development</h2>
-                    <p>
-                        I integrate the backend logic for your web applications/platforms using Django</p>
-                    </div>
-                </div>
-                <div class="card flex">
-                    <div class="card-icon">
-                        <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
-                    </div>
-                    <div class="card-text">
-                        <h2>fullstack Web Development</h2>
-                    <p> As a fullstack developer, I also develop both frontend and backend of your websites </p>
-                    </div>
-                </div>
-               </div>
-            </div>
+           
 
 
         </section>
