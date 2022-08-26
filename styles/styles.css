@@ -290,7 +290,7 @@ main.active {
 /* contact.html */
 
 .form-wrapper {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.2);
     padding: 50px 40px;
     margin-top: 70px;
     border-radius: 20px;
@@ -314,6 +314,8 @@ input {
     flex: 50%;
     padding: 15px;
     border-radius: 15px;
+    background: transparent;
+    border: 1px solid #333;
     
 }
 
@@ -324,6 +326,8 @@ textarea {
     border: 3px solid transparent;
     /* display: block; */
     width: 100%;
+    background: transparent;
+    border: 1px solid #333;
 }
 
 .form-wrapper button {
@@ -341,7 +345,7 @@ textarea {
 }
 
 .form-wrapper input:focus, textarea:focus {
-    border: 3px solid teal;
+    border: 1px solid teal;
 }
 
 
