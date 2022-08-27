@@ -22,7 +22,7 @@ const resumeBtn = document.querySelectorAll('.resume-btn')
 const contactBtn = document.querySelectorAll('.contact-btn')
 const portfolioBtn = document.querySelectorAll('.portfolio-btn')
 
-
+confirm('this website is still in development ') 
 
 switchModes.addEventListener('click', () => {
   switchModes.classList.toggle('active')
