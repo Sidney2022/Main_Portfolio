@@ -44,7 +44,7 @@ main {
     background: var(--bg-gradient-onyx);
     border-radius: 15px;
     position: relative;
-    min-height: 200px;
+    /* min-height: 200px; */
     overflow: hidden;
 }
 
@@ -620,7 +620,7 @@ figure:hover .port-active {
         /* transform: scale(100%); */
         transform: translateY(0);
         display: grid;
-        height: auto;
+        height: max-content;
     }
     
     .menu-open {
@@ -637,24 +637,29 @@ figure:hover .port-active {
 
     .sidebar-intro {
         display: flex;
+        justify-content:flex-start !important;
         align-items: center;
         gap: 50px;
-        height: 100%;
+        height: fit-content;
+        /* background: red; */
     }
-
+    
     .sidebar-img {
-        /* flex:30%; */
-        height: 100px;
-        width: 150px !important;
+        display: inline-block;
+        flex:30%;
+        /* width: 50%; */
+        min-height: 10px;
+        /* width: 100px !important; */
     }
     .sidebar-img img {
         height: 100%;
         width: 100%;
-
     }
-    .sidebar-intro-text  {
-        flex :50%;
-        /* background-color: green; */
+
+    .sidebar-intro-text {
+        /* background: green; */
+        display: inline-block;
+        flex:50%;
     }
     
     .port_name, .port_desc {
@@ -676,11 +681,11 @@ figure:hover .port-active {
         position: relative;
         padding: 20px !important;
         transition: all .7s ease-in-out;
-        max-height: 250px !important;
+        max-height: 240px !important;
     }
 
     .sidebar.mob-active {
-        max-height: fit-content !important;
+        max-height: max-content !important;
     }
     
     .contact-details {
@@ -763,7 +768,7 @@ figure:hover .port-active {
     }
 
     .sidebar-img {
-        height: 10px;
+        min-height: 100px;
         width:20px ;
     }
 
@@ -791,4 +796,14 @@ figure:hover .port-active {
         padding: 5px;
         font-size: 12px;
     }
+}
+
+@media (max-width:300px) {
+    .sidebar-img {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+
+    }
+    
 }
