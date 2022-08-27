@@ -643,7 +643,7 @@ figure:hover .port-active {
     }
 
     .sidebar {
-        /* overflow: hidden; */
+        overflow: hidden;
         position: relative;
         padding: 30px;
         transition: all .7s ease-in-out;
