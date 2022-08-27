@@ -777,6 +777,9 @@ figure:hover .port-active {
         grid-template-columns: 1fr;
         gap: 50px;
     }
+    .main_sect_cont h1::after {
+        width: 20%;
+    }
 }
 
 @media (max-width:650px) {
@@ -850,6 +853,12 @@ figure:hover .port-active {
         margin: 0;
         background: transparent;
     }
+
+    .port_title {
+        height: max-content;
+    }
+
+    
 }
 
 /* @media (max-width:640px) and (min-width:501px) {
