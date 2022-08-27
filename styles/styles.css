@@ -188,7 +188,7 @@ a {
     border: 0;
     text-transform: capitalize;
     background: var(--eerie-black-2);
-    padding: 20px;
+    padding: 9px;
     cursor: pointer;
     color: #fff;
     /* margin: 5px; */
@@ -645,8 +645,8 @@ figure:hover .port-active {
 
     .mob-nav-icon {
         display: block;
-        margin-bottom: 20px;
-        font-size: 30px;
+        margin-bottom: 5px;
+        font-size: 20px;
         color: #fff;
     }
 
@@ -659,7 +659,7 @@ figure:hover .port-active {
     }
     
     .contact-details {
-        /* display: none; */
+        display: none;
         /* transform: translateY(-200px); */
         /* z-index: 0 !important; */
         /* height: 0; */
@@ -670,7 +670,7 @@ figure:hover .port-active {
     .contact-details.active {
         transition: all .7s ease-in-out;
         /* transform: translateY(0); */
-        /* display: block; */
+        display: block;
         /* height: 100%; */
     }
 
@@ -695,13 +695,65 @@ figure:hover .port-active {
     main {
         padding-bottom: 100px;
     }
+
+    .switch {
+        display: block;
+    }
     
+    .services .grid {
+        grid-template-columns: 1fr;
+    }
     
 
-  
+}
 
-    
 
-   
-    
+@media (max-width:768px) {
+    .portfolio.grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+@media (max-width:650px) {
+
+    main {
+        padding: 20px;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+    .card.flex {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .sidebar, .main_section {
+        padding: 20px;
+    }
+    .inputs {
+        flex-direction: column;
+        
+    }
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    .sidebar-img {
+        height: 10px;
+        width:20px ;
+    }
+
+    .sidebar-img img {
+        height: 100%;
+    }
+
+    .contact-details ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width:500px) {
+    .sidebar-intro {
+        gap: 20px;
+    }
 }
