@@ -1,4 +1,6 @@
-const switchModes = document.querySelector('.switch')
+
+
+const switchModes = document.querySelectorAll('.switch')
 const menuToggler = document.querySelector('.menu_toggle')
 const main = document.querySelector('main')
 const mainContent = document.querySelector('.main_section')
@@ -22,14 +24,16 @@ const resumeBtn = document.querySelectorAll('.resume-btn')
 const contactBtn = document.querySelectorAll('.contact-btn')
 const portfolioBtn = document.querySelectorAll('.portfolio-btn')
 
-confirm('this website is still in development ') 
+// confirm('this website is still in development ') 
 
-switchModes.addEventListener('click', () => {
-  switchModes.classList.toggle('active')
-  main.classList.toggle('active')
-  sideBar.classList.toggle('active')
-  mainContent.classList.toggle('active')
-  navBar.classList.toggle('active')
+switchModes.forEach(switch_btn => {
+    switch_btn.addEventListener('click', () => {
+        switch_btn.classList.toggle('active')
+        main.classList.toggle('active')
+        sideBar.classList.toggle('active')
+        mainContent.classList.toggle('active')
+        navBar.classList.toggle('active')
+      })
 })
 
 menuToggler.addEventListener('click', () => {
