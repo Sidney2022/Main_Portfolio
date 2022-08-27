@@ -35,7 +35,6 @@ switchModes.addEventListener('click', () => {
 menuToggler.addEventListener('click', () => {
   menuToggler.classList.toggle('active')
   mobNav.classList.toggle('active')
-
 })
 
 aboutBtn.forEach(about_btn => {
@@ -164,5 +163,6 @@ contactBtn.forEach(contact_btn => {
 
 expandBtn.addEventListener('click', () => {
     contactDetails.classList.toggle('active')
+    sideBar.classList.toggle('mob-active')
 })
 

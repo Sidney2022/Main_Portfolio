@@ -603,7 +603,7 @@ figure:hover .port-active {
 @media (max-width:1200px) {
     main {
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
     }
 
     .navbar {
@@ -639,10 +639,18 @@ figure:hover .port-active {
         display: flex;
         align-items: center;
         gap: 50px;
+        height: 100%;
     }
 
     .sidebar-img {
-        flex:30%;
+        /* flex:30%; */
+        height: 100px;
+        width: 150px !important;
+    }
+    .sidebar-img img {
+        height: 100%;
+        width: 100%;
+
     }
     .sidebar-intro-text  {
         flex :50%;
@@ -668,11 +676,15 @@ figure:hover .port-active {
         position: relative;
         padding: 20px !important;
         transition: all .7s ease-in-out;
-        height: 0 !important;
+        max-height: 250px !important;
+    }
+
+    .sidebar.mob-active {
+        max-height: fit-content !important;
     }
     
     .contact-details {
-        display: none;
+        /* display: none; */
         /* transform: translateY(-200px); */
         /* z-index: 0 !important; */
         /* height: 0; */
@@ -768,5 +780,15 @@ figure:hover .port-active {
 @media (max-width:500px) {
     .sidebar-intro {
         gap: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    main {
+        padding: 15px;
+    }
+    .port_desc {
+        padding: 5px;
+        font-size: 12px;
     }
 }
