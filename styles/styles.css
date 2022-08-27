@@ -204,7 +204,7 @@ a {
     text-align: right;
     padding-right: 40px;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end !important;
     gap: 30px;
 
 }
@@ -913,7 +913,11 @@ figure:hover .port-active {
         font-size: 1rem;
     }
     .sidebar {
-        max-height: 160px !important;
+        max-height: 150px !important;
+    }
+
+    .sidebar.active .port_desc {
+        background: transparent;
     }
 
     
@@ -947,14 +951,18 @@ figure:hover .port-active {
 @media (max-width:300px) {
     .sidebar-img {
         display: none;
+    }
 
+    .sidebar {
+        overflow: hidden;
+        max-height: 140px !important;
     }
 
     .sidebar-intro-text {
         padding: 20px 0;
     }
     .port_desc {
-        padding: 20px 0;
+        padding: 0px 0;
     }
     
 }
