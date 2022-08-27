@@ -791,6 +791,7 @@ figure:hover .port-active {
 @media (max-width:400px) {
     main {
         padding: 15px;
+        padding-bottom: 100px;
     }
     .port_desc {
         padding: 5px;
