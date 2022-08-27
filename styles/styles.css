@@ -165,7 +165,10 @@ a {
 }
 
 .menu_toggle {
-    font-size: 30px;
+    font-size: 20px;
+    margin-top: 5px;
+    
+
     cursor: pointer;
     color: #fff;
     background: transparent;
@@ -180,6 +183,7 @@ a {
     gap: 5px;
     /* transform: scale(0); */
     padding: 10px;
+    padding-bottom: 5px;
     /* display: none; */
 }
 
@@ -196,9 +200,9 @@ a {
 
 .mobile-toggler {
     background: var(--eerie-black-2) ;
-    padding: 20px;
+    padding: 0px;
     text-align: right;
-    padding-right: 50px;
+    padding-right: 40px;
 
 }
 
@@ -672,7 +676,7 @@ figure:hover .port-active {
     .mob-nav-icon {
         display: block;
         margin-bottom: 5px;
-        font-size: 20px;
+        /* font-size: 15px; */
         color: #fff;
     }
 
