@@ -127,44 +127,6 @@ contactBtn.forEach(contact_btn => {
 });
 
 
-// portfolioBtn.addEventListener('click', () => {
-//   portfolioSection.classList.add('active')
-//   portfolioBtn.classList.add('active')
-//   aboutBtn.classList.remove('active')
-//   aboutSection.classList.remove('active')
-//   resumeSection.classList.remove('active')
-//   resumeBtn.classList.remove('active')
-//   contactSection.classList.remove('active')
-//   contactBtn.classList.remove('active')
-//   check()
-// })
-
-// resumeBtn.addEventListener('click', () => {
-//   portfolioSection.classList.remove('active')
-//   resumeBtn.classList.add('active')
-//   portfolioBtn.classList.remove('active')
-//   aboutBtn.classList.remove('active')
-//   contactBtn.classList.remove('active')
-//   aboutSection.classList.remove('active')
-//   resumeSection.classList.add('active')
-//   contactSection.classList.remove('active')
-//   // portfolioSection.classList.add('active')
-// })
-
-// aboutBtn.addEventListener('click', () => {
-//   aboutSection.classList.add('active')
-//   portfolioSection.classList.remove('active')
-//   portfolioBtn.classList.remove('active')
-//   resumeBtn.classList.remove('active')
-//   contactBtn.classList.remove('active')
-//   aboutBtn.classList.add('active')
-//   resumeSection.classList.remove('active')
-//   contactSection.classList.remove('active')
-//   // portfolioSection.classList.add('active')
-// })
-
-
-
 expandBtn.addEventListener('click', () => {
     contactDetails.classList.toggle('active')
     sideBar.classList.toggle('mob-active')
