@@ -273,6 +273,27 @@ main.active {
     background: #ccc;
 }
 
+.social-links {
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icon {
+    margin: 10px;
+    font-size: 25px;
+}
+
+.social-icon a {
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.social-icon a:hover {
+    color: teal;
+
+}
+
 .navbar.active {
     /* background: #ccc; */
     border: 0;
@@ -763,6 +784,11 @@ figure:hover .port-active {
     .sidebar, .main_section {
         padding: 20px;
     }
+
+    .social-links {
+        text-align: left;
+    }
+
     .inputs {
         flex-direction: column;
         
