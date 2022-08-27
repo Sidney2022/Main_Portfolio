@@ -370,8 +370,11 @@ input {
     border-radius: 15px;
     background: transparent;
     border: 1px solid #333;
+    color: #fff;
     
 }
+
+
 
 textarea {
     border-radius: 15px;
@@ -382,6 +385,11 @@ textarea {
     width: 100%;
     background: transparent;
     border: 1px solid #333;
+    color: #fff;
+}
+
+.main_section.active input, .main_section.active textarea{
+    color: #333;
 }
 
 .form-wrapper button {
