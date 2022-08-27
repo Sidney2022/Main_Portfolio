@@ -27,13 +27,10 @@ main {
 }
 
 .sidebar {
-    /* width: 28%; */
     flex: 28%;
     padding: 40px;
-    /* position: fixed; */
     height: 100vh;
     overflow-y:scroll;
-    /* left: ; */
 }
 
 .expand-btn {
@@ -159,7 +156,7 @@ a {
 .mobile-menu {
     position: fixed;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     left: 0;
     z-index: 1000;
     display: none;
@@ -168,8 +165,12 @@ a {
 }
 
 .menu_toggle {
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
+    color: #fff;
+    background: transparent;
+    border: 0;
+
 }
 
 .mobile-navbar {
@@ -177,8 +178,9 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    transform: scale(0);
+    /* transform: scale(0); */
     padding: 10px;
+    /* display: none; */
 }
 
 .mobile-navbar button {
@@ -196,6 +198,7 @@ a {
     background: var(--eerie-black-2) ;
     padding: 20px;
     text-align: right;
+    padding-right: 50px;
 
 }
 
@@ -594,19 +597,26 @@ figure:hover .port-active {
         display: none;
     }
     .mobile-navbar {
-        transition: all .3s ease-in-out;
+        transition: all .5s ease-in-out;
+        transform: translateY(50vh);
+        z-index: -1 !important;
+        /* display: none; */
+        height: 0;
     }
     .mobile-navbar.active {
-        transform: scale(100%);
+        /* transform: scale(100%); */
+        transform: translateY(0);
+        display: grid;
+        height: auto;
     }
-
+    
     .menu-open {
-        background-color: red;
+        background: red;
     }
    
-    .mobile_toggle {
+    /* .mobile_toggle {
         background-color: aqua;
-    }
+    } */
     
     .mobile-menu {
         display: block;
@@ -631,8 +641,6 @@ figure:hover .port-active {
         width: fit-content;
         margin: 30px 0;
         padding: 10px;
-
-
     }
 
     .mob-nav-icon {
@@ -645,14 +653,15 @@ figure:hover .port-active {
     .sidebar {
         overflow: hidden;
         position: relative;
-        padding: 30px;
+        padding: 20px !important;
         transition: all .7s ease-in-out;
+        height: 0 !important;
     }
     
     .contact-details {
-        display: none;
-        transform: translateY(-200px);
-        z-index: 0 !important;
+        /* display: none; */
+        /* transform: translateY(-200px); */
+        /* z-index: 0 !important; */
         /* height: 0; */
         transition: all .7s ease-in-out;
         font-size: 14px;
@@ -660,8 +669,8 @@ figure:hover .port-active {
     
     .contact-details.active {
         transition: all .7s ease-in-out;
-        transform: translateY(0);
-        display: block;
+        /* transform: translateY(0); */
+        /* display: block; */
         /* height: 100%; */
     }
 
