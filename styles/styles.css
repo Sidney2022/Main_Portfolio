@@ -36,6 +36,11 @@ main {
     /* left: ; */
 }
 
+.expand-btn {
+    display: none;
+} 
+
+
 .sidebar-img {
     margin: 0 auto;
     width: 90%;
@@ -149,6 +154,49 @@ a {
 
 .navbar .flex {
     /* gap: 30px; */
+}
+
+.mobile-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    height: fit-content;
+    
+}
+
+.menu_toggle {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobile-navbar {
+    background: var(--bg-gradient-onyx);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    transform: scale(0);
+    padding: 10px;
+}
+
+.mobile-navbar button {
+    background: transparent;
+    border: 0;
+    text-transform: capitalize;
+    background: var(--eerie-black-2);
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+    /* margin: 5px; */
+}
+
+.mobile-toggler {
+    background: var(--eerie-black-2) ;
+    padding: 20px;
+    text-align: right;
+
 }
 
 .navbar button {
@@ -268,7 +316,12 @@ main.active {
     background: #333;
     padding: 30px;
     border-radius: 20px;
+    transition: all .3s ease-in-out;
 
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .main_section.active .card{
@@ -301,11 +354,9 @@ main.active {
 
 .inputs {
     display: flex;
-    /* background-color: rebeccapurple; */
     margin-bottom: 40px;
     gap: 20px;
 }
-
 
 
 input {
@@ -355,9 +406,7 @@ textarea {
     font-size: 30px;
 }
 
-.resume-title-text  {
-    /* background: aqua; */
-}
+
 
 .resume-container {
     overflow: hidden;
@@ -425,7 +474,6 @@ textarea {
 .experience .resume-content::after {
     top: -70px;
 }
-
 
 /* portfolio */
 
@@ -527,3 +575,124 @@ figure:hover .port-active {
 }
 
 
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        transition: all .3s ease-in-out;
+    }
+    .mobile-navbar.active {
+        transform: scale(100%);
+    }
+
+    .menu-open {
+        background-color: red;
+    }
+   
+    .mobile_toggle {
+        background-color: aqua;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+
+    .sidebar-intro {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .sidebar-img {
+        flex:30%;
+    }
+    .sidebar-intro-text  {
+        flex :50%;
+        /* background-color: green; */
+    }
+    
+    .port_name, .port_desc {
+        text-align: left ;
+        width: fit-content;
+        margin: 30px 0;
+        padding: 10px;
+
+
+    }
+
+    .mob-nav-icon {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .sidebar {
+        /* overflow: hidden; */
+        position: relative;
+        padding: 30px;
+        transition: all .7s ease-in-out;
+    }
+    
+    .contact-details {
+        display: none;
+        transform: translateY(-200px);
+        z-index: 0 !important;
+        /* height: 0; */
+        transition: all .7s ease-in-out;
+        font-size: 14px;
+    }
+    
+    .contact-details.active {
+        transition: all .7s ease-in-out;
+        transform: translateY(0);
+        display: block;
+        /* height: 100%; */
+    }
+
+    .expand-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 20px;
+        border-radius: 0 0 0 15px;
+        cursor: pointer;
+        background: teal;
+        border: 0;
+        color: #fff;
+    }
+
+    .contact-details ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+    
+    
+
+  
+
+    
+
+   
+    
+}

@@ -16,18 +16,24 @@
     <main>
 
         <section class="sidebar">
-            <div class="sidebar-img">
-                <img src="./image/me.png" alt="">
+            <button class="expand-btn">Expand </button>
+
+            <div class="sidebar-intro">
+                <div class="sidebar-img">
+                    <img src="./image/me.png" alt="">
+                </div>
+    
+                <div class="sidebar-intro-text">
+                    <h2 class="port_name cap text-center">sidney uwaya</h2>
+    
+                    <p class="port_desc text-center cap">full stack web developer</p>
+                </div>
             </div>
-
-            <h2 class="port_name cap text-center">sidney uwaya</h2>
-
-            <p class="port_desc text-center cap">full stack web developer</p>
 
             <hr>
 
             <div class="contact-details cap">
-               <ul>
+               <ul >
                 
                 <li class="flex contact_detail">
                     <div class="contact-icon">
@@ -84,13 +90,44 @@
         <section class="main_section">
             <div class="navbar cap">
                 <div class="flex ">
-                     <button class="about-btn" >about</button>
+                     <button class="about-btn active" >about</button>
                      <button class="resume-btn">resume</button>
                      <button class="portfolio-btn">portfolio</button>
                      <button class="contact-btn">contact</button>
                         <button class="switch">
                             <ion-icon name="moon" class="dark-mode "></ion-icon>
                             <ion-icon name="sunny" class="light-mode "></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <div class="mobile-navbar ">
+                    <button class="about-btn active" >
+                        <span class="mob-nav-icon">
+                            <ion-icon name="person-outline"></ion-icon> 
+                        </span>
+                        about</button>
+                    <button class="resume-btn"><span class="mob-nav-icon">
+                        <ion-icon name="document-outline"></ion-icon>
+                        </span>
+                        
+                    resume</button>
+                    <button class="portfolio-btn">
+                        <span class="mob-nav-icon">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </span>
+                        portfolio</button>
+                    <button class="contact-btn">
+                        <span class="mob-nav-icon">
+                            <ion-icon name="megaphone-outline"></ion-icon>
+                        </span>
+                        contact</button>
+                </div>
+                <div class="mobile-toggler">
+                    <button class="menu_toggle">
+                        <!-- <ion-icon name="moon" class="menu-close "></ion-icon> -->
+                        <ion-icon name="grid-outline"></ion-icon>
                     </button>
                 </div>
             </div>
