@@ -71,7 +71,7 @@ hr {
 .port_desc {
     padding: 5px;
     border-radius: 15px;
-    width: 80%;
+    width: max-content;
     margin: 0 auto;
     font-size: 14px;
 }
@@ -254,9 +254,9 @@ main.active {
     box-shadow: 0 0 10px #aaa;
 }
 
-.sidebar.active .port_desc {
+/* .sidebar.active .port_desc {
     background-color: #ccc;
-}
+} */
 
 .sidebar.active .contact_detail a, .sidebar.active .cont_title {
     color: #333;
