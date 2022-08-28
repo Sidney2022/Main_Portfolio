@@ -1,11 +1,9 @@
-
-
-const switchModes = document.querySelectorAll('.switch')
-const menuToggler = document.querySelector('.menu_toggle')
 const main = document.querySelector('main')
 const mainContent = document.querySelector('.main_section')
 const navBar = document.querySelector('.navbar')
+const menuToggler = document.querySelector('.menu_toggle')
 const mobNav = document.querySelector('.mobile-navbar')
+const switchBtns = document.querySelectorAll('.switch')
 
 // sidebar
 const sideBar = document.querySelector('.sidebar')
@@ -24,9 +22,8 @@ const resumeBtn = document.querySelectorAll('.resume-btn')
 const contactBtn = document.querySelectorAll('.contact-btn')
 const portfolioBtn = document.querySelectorAll('.portfolio-btn')
 
-// confirm('this website is still in development ') 
 
-switchModes.forEach(switch_btn => {
+switchBtns.forEach(switch_btn => {
     switch_btn.addEventListener('click', () => {
         switch_btn.classList.toggle('active')
         main.classList.toggle('active')
@@ -41,6 +38,13 @@ menuToggler.addEventListener('click', () => {
   mobNav.classList.toggle('active')
 })
 
+// expand button on mobile screen
+expandBtn.addEventListener('click', () => {
+    contactDetails.classList.toggle('active')
+    sideBar.classList.toggle('mob-active')
+})
+
+//page sections
 aboutBtn.forEach(about_btn => {
 
     about_btn.addEventListener('click', () => {
@@ -126,9 +130,4 @@ contactBtn.forEach(contact_btn => {
       
 });
 
-
-expandBtn.addEventListener('click', () => {
-    contactDetails.classList.toggle('active')
-    sideBar.classList.toggle('mob-active')
-})
 
