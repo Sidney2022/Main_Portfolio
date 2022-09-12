@@ -1,3 +1,4 @@
+const body = document.querySelector('body')
 const main = document.querySelector('main')
 const mainContent = document.querySelector('.main_section')
 const navBar = document.querySelector('.navbar')
@@ -26,7 +27,7 @@ const portfolioBtn = document.querySelectorAll('.portfolio-btn')
 switchBtns.forEach(switch_btn => {
     switch_btn.addEventListener('click', () => {
         switch_btn.classList.toggle('active')
-        main.classList.toggle('active')
+        body.classList.toggle('active')
         sideBar.classList.toggle('active')
         mainContent.classList.toggle('active')
         navBar.classList.toggle('active')
@@ -131,5 +132,5 @@ contactBtn.forEach(contact_btn => {
 });
 
 
-confirm('this website is still in development')
+// confirm('this website is still in development')
 
